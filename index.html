@@ -1,0 +1,66 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gas Laws Calculator</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="box-1">
+      <section class="title-1">
+        <h1>Gas Laws Calculator</h1>
+        <div class="home-wrapper">
+          <button type="button" class="home-btn btn">Home</button>
+        </div>
+        <p class="author"></p>
+      </section>
+    </div>
+    <div class="box-2">
+      <button type="button" class="boyle-btn opt-btn btn">Boyle's Law</button>
+      <button type="button" class="charles-btn opt-btn btn">
+        Charles' Law
+      </button>
+      <button type="button" class="gaylussac-btn opt-btn btn">
+        Gay-Lussac's Law
+      </button>
+      <button type="button" class="avogadro-btn opt-btn btn">
+        Avogadro's Law
+      </button>
+      <button type="button" class="ige-btn opt-btn btn">Ideal Gas Law</button>
+    </div>
+    <div class="box-3">
+      <div class="selection">
+        <form name="form1" class="form1" action="">
+          <p class="choose-legend">Choose the value you want to obtain:</p>
+          <select name="ddMenu" class="ddMenu">
+            <div class="content">
+              <option value="Initial Pressure">Initial Pressure</option>
+              <option value="Initial Volume">Initial Volume</option>
+              <option value="Final Pressure">Final Pressure</option>
+              <option value="Final Volume">Final Volume</option>
+            </div>
+          </select>
+        </form>
+      </div>
+      <label class="label" for="label-1" id="label-1">Initial Pressure:</label>
+      <input readonly class="input result" type="number" id="input-1" />
+      <label class="lbl-unit lbl-unit-1" for="unit-1">kpa</label>
+      <label class="label grid-item" for="label-2" id="label-2">Initial Volume:</label>
+      <input class="input" type="number" id="input-2" />
+      <label class="lbl-unit lbl-unit-2" for="unit-1">L</label>
+      <label class="label grid-item" for="label-3" id="label-3">Final Pressure:</label>
+      <input class="input" type="number" id="input-3" />
+      <label class="lbl-unit lbl-unit-3" for="unit-1">kpa</label>
+      <label class="label grid-item" for="label-4" id="label-4">Final Volume:</label>
+      <input class="input" type="number" id="input-4" />
+      <label class="lbl-unit lbl-unit-4" for="unit-1">L</label>
+    </div>
+  </div>
+</body>
+<script src="script.js"></script>
+
+</html>
